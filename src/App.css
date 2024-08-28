@@ -1,3 +1,4 @@
+/* App component layout */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,20 @@
   text-align: center;
 }
 
+#root > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+#root > div > nav {
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,9 +27,6 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -28,15 +40,65 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
+/* NavBar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  border-bottom: 2px solid #444;
 }
 
-.read-the-docs {
-  color: #888;
+nav h1 {
+  margin: 0;
+  padding: 0px 50px 0px 50px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+/* CartWidget styles */
+nav div {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+}
+
+nav div img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+nav div span {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* ItemListContainer styles */
+div p {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #444;
+  background-color: #222;
+  border-radius: 8px;
+  font-size: 18px;
 }
