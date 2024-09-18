@@ -6,12 +6,14 @@
   text-align: center;
 }
 
+/*
 #root > div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
 }
+*/
 
 #root > div > nav {
   width: 90%;
@@ -94,7 +96,9 @@ nav div span {
 }
 
 /* ItemListContainer styles */
+/*
 div p {
+  display: inline-block;
   margin: 20px;
   padding: 20px;
   border: 2px solid #444;
@@ -102,3 +106,4 @@ div p {
   border-radius: 8px;
   font-size: 18px;
 }
+*/
