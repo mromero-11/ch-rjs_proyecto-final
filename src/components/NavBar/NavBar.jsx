@@ -9,12 +9,14 @@ function NavBar ()
             <img src={logo} className="logo" alt="Kali Records logo" />
             <h1>Kali Records</h1>
             <ul>
-                <Link to="/rock">Rock</Link>
-                <Link to="/metal">Metal</Link>
-                <Link to="/grunge">Grunge</Link>
-                <Link to="/funk_soul">Funk & Soul</Link>
+                <Link to="/genre/rock">Rock</Link>
+                <Link to="/genre/metal">Metal</Link>
+                <Link to="/genre/grunge">Grunge</Link>
+                <Link to="/genre/funk_soul">Funk & Soul</Link>
             </ul>
-            <CartWidget />
+            <Link to="/cart">
+                <CartWidget />
+            </Link>
         </nav>
     );
 };

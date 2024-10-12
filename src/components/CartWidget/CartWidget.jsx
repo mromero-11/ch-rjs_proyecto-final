@@ -1,12 +1,15 @@
-import cartIcon from '../../assets/shopping_cart_icon.png';
+import { useCartContext } from "../../context/cartContext"
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 
-function CartWidget () 
-{
+function CartWidget () {
+  const { cart } = useCartContext()
+
   return (
-    <div>
-      <img src={cartIcon} alt="Cart icon" />
-      <span>3</span>
-    </div>
+    <Button variant="primary">
+      Cart <Badge bg="secondary">{cart.length}</Badge>
+      <span className="visually-hidden">unread messages</span>
+    </Button>
   );
 };
 
